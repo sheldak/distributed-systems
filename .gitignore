@@ -231,3 +231,5 @@ dmypy.json
 cython_debug/
 
 .idea/
+
+*.db
