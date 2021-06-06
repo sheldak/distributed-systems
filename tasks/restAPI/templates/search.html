@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+{% block content %}
+    <div class="content-section">
+        <form method="POST" action="">
+            <fieldset class="form-group">
+                <div>
+                    <label>Base currency</label>
+                    <input type="text" name="base" id="text">
+                </div>
+                <input class="btn btn-outline-form" type="submit" value="Search">
+            </fieldset>
+        </form>
+        {% for rate in data %}
+        <article class="media content-section">
+          <div class="media-body">
+            <h5><a class="article-title">{{ rate }}</a></h5>
+          </div>
+        </article>
+        {% endfor %}
+    </div>
+{% endblock content %}
